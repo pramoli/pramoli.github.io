@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 0 var(--space-5xl);
+}
+ul, ol, li {
+    list-style: none;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-secondary);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: var(--color-pink-primary);
+    border-radius: var(--border-radius-s);
+    border: 2px solid var(--color-pink-border);
+    color: var(--color-text-white);
+    padding: var(--space-xs) var(--space-m);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-xs);
+    line-height: 1.3;
+}
+
+.btn--secondary {
+    background-color: var(--color-text-white);
+    color: var(--color-pink-primary);
+    border: 2px solid var(--color-pink-primary);
+
+}
+.text-details {
+    font-size: var(--font-size-xxs);
+    color: var(--color-text-grey);
+}
+
+.text-p {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-s);
+    color: var(--color-text-grey);
+    line-height: 1.4;
+}
+
+.text-btn {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-black);
+    line-height: 1.3;
+}
+
+.text-hero{
+    font-family: var(--font-primary);
+    font-size: var(--font-size-xxl);
+    color: var(--color-text-black);
+    line-height: 0.9;
+    font-weight: var(--font-medium);
+}
+
+.text-h1 {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-xl);
+    color: var(--color-pink-primary);
+    line-height: 0.9;
+    font-weight: var(--font-medium);
+}
+.text-h2 {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-l);
+    color: var(--color-text-black);
+    font-weight: var(--font-medium);
+}
+.text-h3 {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-m);
+    color: var(--color-text-black);
+    font-weight: var(--font-medium);
+}
+
+.action-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.action-item__icon {
+    width: 1em;
+    height: 1em;
+}
+
+.card {
+    background-color: var(--color-text-white);
+    border-radius: var(--border-radius-m);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
