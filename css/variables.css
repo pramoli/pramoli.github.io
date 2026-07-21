@@ -2,7 +2,7 @@
 
 :root {
     --menu-height: 60px;
-    --max-width-content: 1600px;
+    --max-width-content: 1300px;
 
     /*      BORDER RADIUS       */
     --border-radius-xs: 0.25rem; /* 4px */
@@ -52,6 +52,7 @@
     --color-gey-border: #ebeaea;
     --color-text-black: #060606;
     --color-text-grey: #4d4d4d;
+    --color-text-warning: #c20b0b;
     --color-text-white: #FFFFFF;
     --color-bg-white: #FBFBFB;
     --color-bg-purple: #EEE7F6;

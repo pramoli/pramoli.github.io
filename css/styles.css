@@ -40,6 +40,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-xl);
+    max-width: var(--max-width-content);
 }
 
 .proyects--item {
@@ -53,7 +54,8 @@
     width: calc(40% - (var(--space-l) / 2));
     display: flex;
     flex-direction: column;
-    gap: var(--space-m)
+    gap: var(--space-l);
+    justify-content: center;
 }
 
 .proyects--item--img {
@@ -72,9 +74,6 @@
 
 .portfolio-about {
     padding: var(--space-xxl) var(--space-5xl);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .about-texts {
@@ -105,6 +104,43 @@
 }
 
 .portfolio-tecnologies {
+    margin: 0 auto;
     padding: var(--space-xxl) var(--space-5xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(
+    to top,
+    var(--color-bg-purple) 80%,
+    var(--color-bg-white) 100%
+    );
 }
 
+.tecnologies {
+    max-width: var(--max-width-content);
+}
+.max-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: var(--max-width-content);
+}
+
+.portfolio--footer {
+    display: flex;
+    padding: var(--space-xxl) var(--space-5xl);
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width-content);
+}
+
+.social-media-item {
+    padding: var(--space-xs);
+    display: flex;
+}
