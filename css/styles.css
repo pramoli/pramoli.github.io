@@ -5,6 +5,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    background: linear-gradient(
+    to bottom,
+    var(--color-bg-white) 80%,
+    var(--color-bg-purple) 100%
+    );
+    padding: 0 var(--space-5xl);
 }
 
 .hero--btns {
@@ -14,31 +21,35 @@
 }
 
 .portfolio-proyects {
-    border: 2px solid blue;
-    padding: var(--space-xxl) 0;
+    padding: var(--space-xxl) var(--space-5xl);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-m);
+    gap: var(--space-xl);
+
+    background: linear-gradient(
+    to bottom,
+    var(--color-bg-purple) 95%,
+    var(--color-bg-white) 100%
+    );
+
 }
 
 .proyects {
-    border: solid 2px orange;
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: var(--space-xl);
 }
 
 .proyects--item {
-    border: solid 2px pink;
     width: 100%;
     display: flex;
-    padding: var(--space-l);
+    padding: var(--space-xl);
     gap: var(--space-l);
 }
 
 .proyects--item-info {
-    border: solid 2px green;
     width: calc(40% - (var(--space-l) / 2));
     display: flex;
     flex-direction: column;
@@ -47,12 +58,53 @@
 
 .proyects--item--img {
     width: calc(60% - ( var(--space-l) / 2 ));
-    border: solid 2px purple;
+    aspect-ratio: 16 / 9;
+    border: solid 2px var(--color-gey-border);
+    border-radius: var(--border-radius-s);
+    object-fit: cover;
 }
 
 .proyects--item-info--btn {
     display: flex;
     gap: var(--space-m);
     justify-content: flex-end;
+}
+
+.portfolio-about {
+    padding: var(--space-xxl) var(--space-5xl);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-texts {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+}
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m);
+}
+
+.portfolio-about--studies {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.card-study{
+    padding: var(--space-l);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+}
+
+.portfolio-tecnologies {
+    padding: var(--space-xxl) var(--space-5xl);
 }
 
