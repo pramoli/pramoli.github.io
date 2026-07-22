@@ -93,10 +93,19 @@ a {
     font-weight: var(--font-medium);
 }
 
+.text-h4 {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-ms);
+    color: var(--color-text-black);
+    font-weight: var(--font-medium);
+}
+
 .text-pink {
     color: var(--color-pink-primary);
 }
-
+.text-grey{
+    color: var(--color-text-semiblack);
+}
 .action-item {
     display: flex;
     align-items: center;
@@ -116,6 +125,16 @@ a {
 }
 
 .icon-size-l {
-    height: var(--space-l);
-    width: var(--space-l);
+    height: 1.95rem;
+    width: 1.95rem;
 }
+.icon-size-l2 {
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.icon-size-xl {
+    height: var(--space-xxl);
+    width: var(--space-xxl);
+}
+

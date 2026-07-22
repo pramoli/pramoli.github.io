@@ -34,6 +34,7 @@
     --font-size-xl: 3.5rem;   /* 32px */
     --font-size-l: 3rem;  /* 24px */
     --font-size-m: 2rem; /* 20px */
+    --font-size-ms: 1.5rem;
     --font-size-s: 1rem;      /* 16px */
     --font-size-xs:  0.875rem;  /* 14px */
     --font-size-xxs:  0.75rem;   /* 12px */
@@ -51,6 +52,7 @@
     --color-pink-border: #e776ba;
     --color-gey-border: #ebeaea;
     --color-text-black: #060606;
+    --color-text-semiblack: #747373;
     --color-text-grey: #4d4d4d;
     --color-text-warning: #c20b0b;
     --color-text-white: #FFFFFF;
