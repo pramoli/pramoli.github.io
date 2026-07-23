@@ -1,0 +1,115 @@
+.topbar {
+    position: fixed;
+    inset: 0 0 auto 0;
+    height: var(--menu-height);
+    padding: 0 var(--space-5xl);
+    display: flex;
+    background-color: var(--color-text-white);
+    z-index: 2;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    @media (max-width: 1350px) {
+        padding: 0 var(--space-xxl);
+    }
+    @media (max-width: 550px) {
+        padding: 0 var(--space-xl);
+    }
+}
+
+.topbar__content {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    max-width: var(--max-width-content);
+    justify-content: space-between;
+    align-items: center;
+     /* para posicionar el nav desplegable */
+}
+
+.topbar__logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-s);
+}
+
+.topbar__logo-img {
+    height: 35px;
+    width: 35px;
+    background-color: green;
+    border-radius: 999px;
+}
+
+.topbar__nav {
+    display: flex;
+    gap: var(--space-l);
+}
+
+.topbar__nav-link:hover {
+    color: var(--color-pink-primary);
+}
+
+.topbar__toggle-checkbox {
+    display: none;
+}
+
+.topbar__toggle-label {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.topbar__toggle-label span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-text-black);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@media (max-width: 550px) {
+
+    .topbar__toggle-label {
+        display: flex;
+    }
+
+    .topbar__nav {
+        position: absolute;
+        top: calc(100%);
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-xl);
+        background-color: var(--color-text-white);
+        padding: var(--space-xxl) 0;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+
+        /* oculto por defecto */
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    .topbar__toggle-checkbox:checked ~ .topbar__nav {
+        max-height: 300px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .topbar__toggle-checkbox:checked ~ .topbar__toggle-label span:nth-child(1) {
+        transform: translateY(8.5px) rotate(45deg);
+    }
+
+    .topbar__toggle-checkbox:checked ~ .topbar__toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .topbar__toggle-checkbox:checked ~ .topbar__toggle-label span:nth-child(3) {
+        transform: translateY(-8.5px) rotate(-45deg);
+    }
+}

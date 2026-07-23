@@ -8,7 +8,12 @@ ul, ol, li {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
+    padding-top: var(--menu-height);
     font-family: var(--font-secondary);
     background-color: var(--color-bg-white);
 }
@@ -70,6 +75,13 @@ a {
     color: var(--color-text-black);
     line-height: 0.9;
     font-weight: var(--font-medium);
+    text-align: center;
+    @media (max-width: 900px) {
+        font-size:9rem;
+    }
+    @media (max-width: 750px) {
+        font-size:7rem;
+    }
 }
 
 .text-h1 {
