@@ -34,7 +34,7 @@
 .topbar__logo-img {
     height: 35px;
     width: 35px;
-    background-color: green;
+    background-color: var(--color-pink-primary);
     border-radius: 999px;
 }
 
